@@ -1,0 +1,9 @@
+.
+├── common.yml
+├── configure_db.yml
+├── databases.yml
+├── files
+│   └── index.html
+├── intranet.yml
+├── inventory
+└── site.yml
