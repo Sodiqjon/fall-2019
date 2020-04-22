@@ -1,2 +1,11 @@
+---
+- name: Install initial packages on all boxes
   hosts: all
+  remote_user: ansible
   become: yes
+
+  tasks:
+    - name: Install all initil packages
+      yum:
+        name: ['man', 'man-pages', 'mlocate', 'vim', 'bind-utils']
+        state: present
